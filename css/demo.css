@@ -1,0 +1,30 @@
+@charset "utf-8";
+#basic-modal-content {display:none;}
+
+/* Overlay */
+#simplemodal-overlay {background-color:#000; cursor:wait;}
+
+/* Container */
+#simplemodal-container {
+height:525px; 
+width:738px; 
+color:#000;
+background:url("../images/modalBackground.png") no-repeat;
+background-color:#FFF;
+}
+#simplemodal-container .simplemodal-data {padding:8px;}
+#simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+.simple-modal-close {
+width:20px; 
+height:20px; 
+display:inline; 
+position:absolute; 
+top:15px; 
+right:16px; 
+cursor:pointer;
+}
+#simplemodal-container h3 {
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 24px;
+color: #182461;
+}

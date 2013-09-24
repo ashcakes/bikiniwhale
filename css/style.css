@@ -1,0 +1,437 @@
+@-webkit-keyframes spinMe
+{
+	0% {transform: rotateZ(0deg);
+		-ms-transform: rotateZ(0deg); /* IE 9 */
+		-webkit-transform: rotateZ(0deg); /* Safari and Chrome */
+		}
+	
+	100% {transform: rotateZ(360deg);
+		-ms-transform: rotateZ(360deg); /* IE 9 */
+		-webkit-transform: rotateZ(360deg); /* Safari and Chrome */
+		}
+}
+@font-face {
+    font-family: 'megalopolis_extraregular';
+    src: url(../fonts/megalopolisextra-webfont.eot);
+    src: url(../fonts/megalopolisextra-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/megalopolisextra-webfont.woff) format('woff'),
+         url(../fonts/megalopolisextra-webfont.ttf) format('truetype'),
+         url(../fonts/megalopolisextra-webfont.svg#megalopolis_extraregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'liberatorregular';
+    src: url('../fonts/liberator-webfont.eot');
+    src: url('../fonts/liberator-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/liberator-webfont.woff') format('woff'),
+         url('../fonts/liberator-webfont.ttf') format('truetype'),
+         url('../fonts/liberator-webfont.svg#liberatorregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ostrich_sansblack';
+    src: url('../fonts/ostrich-black-webfont.eot');
+    src: url('../fonts/ostrich-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ostrich-black-webfont.woff') format('woff'),
+         url('../fonts/ostrich-black-webfont.ttf') format('truetype'),
+         url('../fonts/ostrich-black-webfont.svg#ostrich_sansblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ostrich_sansbold';
+    src: url('../fonts/ostrich-bold-webfont.eot');
+    src: url('../fonts/ostrich-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ostrich-bold-webfont.woff') format('woff'),
+         url('../fonts/ostrich-bold-webfont.ttf') format('truetype'),
+         url('../fonts/ostrich-bold-webfont.svg#ostrich_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ostrich_sansmedium';
+    src: url('../fonts/ostrich-regular-webfont.eot');
+    src: url('../fonts/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ostrich-regular-webfont.woff') format('woff'),
+         url('../fonts/ostrich-regular-webfont.ttf') format('truetype'),
+         url('../fonts/ostrich-regular-webfont.svg#ostrich_sansmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	background: url("../images/background.jpg");
+	color: white;
+}
+header{
+	display: inline;
+	background: url("../images/binding.png");
+	text-align: center;
+	font-size: 24px;
+	width: 100%;
+	position: fixed;
+}
+h1{
+	font-family: 'megalopolis_extraregular';
+	text-transform: uppercase;
+	font-size: 72px;
+	color:white;
+}
+h2{
+	font-size: 40px;
+	color: #761952;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 100px;
+	font-family: 'ostrich_sansblack', sans-serif;
+}
+h3{
+	font-size: 24px;
+	color: black;
+	text-align: center;
+	font-family: 'ostrich_sansmedium', Verdana, Tahoma, sans-serif;
+}
+h4{
+	font-size: 24px;
+	color: white;
+	text-align: center;
+	font-family: 'ostrich_sansmedium', Verdana, Tahoma, sans-serif;
+}
+a:link,a:visited{
+	display:inline;
+	color: #a02d73;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+}
+a:hover,a:active{
+	color: #87d3e2;
+}
+p{
+	font-size: 12px;
+	font-family: Arial, Tahoma, sans-serif;
+	color: black;
+	text-align: center;
+	text-transform: uppercase;
+}
+.center {
+	display: inline-block;
+	/*margin: 0px auto; display: block;*/
+}
+ul{
+	display: inline;
+	color: #a02d73;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+}
+li{
+	display: inline;
+	color: #a02d73;
+	float:left;
+	padding: 0 10px;
+}
+
+#nav{
+	font-family: 'ostrich_sansblack';
+	display: inline;
+	color: #761952;
+	font-size: 30px;
+	margin: 20px 25px;
+	float:right;
+
+}
+#main{
+	margin: 0 auto;
+	width: 100%;
+}
+
+#centerImages{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 500px;
+	height: 770px;
+	position: relative;
+	z-index: -2
+}
+#mainPageContainer{
+	display: table;
+	margin: auto;
+}
+#mainImage{
+	padding-top: 60px;
+}
+#spiral_container{
+	position: absolute;
+	top: 460px;
+	right: 150px;
+}
+.spiral{
+	-webkit-animation-name: spinMe;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 500ms;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-play-state: running;
+	-webkit-animation-fill-mode: forwards;
+}
+#footer{
+	background: #a02d73;
+	height:40px;
+	padding:5px 0 25px 0;
+	margin-top:100px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+#footer a{
+	font-family: 'ostrich_sansbold';
+	color:white;
+	text-align: right;
+}
+#shows{
+	display:inline;
+}
+#video{
+	text-align: center;
+	padding-top: 150px;
+}
+#smallLogo{
+	display: inline;
+	padding: 5px 0;
+	margin: 5px 30px;
+	float:left;
+}
+#container{
+	width: 100%;
+	margin:0 auto; /*centers contents*/
+}
+#centerText{
+	width: 220px;
+	height: 250px;
+	margin-top: -80px;
+	margin-bottom:80px;
+
+	color:black;
+	text-align: center;
+	font-family: 'megalopolis_extraregular';
+}
+#membersTop{
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 120px;
+	padding-left: 90px;
+}
+#lisa{
+	display: inline-block;
+	background: url(../images/lisaOff.png) no-repeat;
+	background-size: 60%;
+	height: 200px;
+	width: 231px;
+	}
+#lisa:hover{
+	display: inline-block;
+	background: url(../images/lisaOn.png) no-repeat;
+	background-size: 60%;
+	height: 200px;
+	width: 231px;
+}
+#michael{
+	display: inline-block;
+	background: url(../images/michaelOff.png)  no-repeat;
+	background-size: 60%;
+	height: 200px;
+	width: 231px;
+	padding-top: 80px;
+}
+#michael:hover{
+	display: inline-block;
+	background: url(../images/michaelOn.png)  no-repeat;
+	background-size: 60%;
+	height: 200px;
+	width: 231px;
+	padding-top: 80px;
+}
+#ashley{
+	display: inline-block;
+	background: url(../images/ashOff.png)  no-repeat;
+	background-size: 60%;
+	height: 200px;
+	width: 231px;
+}
+#ashley:hover{
+	display: inline-block;
+	background: url(../images/ashOn.png)  no-repeat;
+	background-size: 60%;
+	height: 200px;
+	width: 231px;
+}
+#membersBottom{
+	text-align: center;
+	margin-top: -250px;
+	padding-left: 80px;
+}
+#kevin{
+	display: inline-block;
+	background: url(../images/kevinOff.png) no-repeat;
+	background-size: 60%;
+	height: 200px;
+	width: 231px;
+	padding-bottom: 80px;
+	}
+#kevin:hover{
+	display: inline-block;
+	background: url(../images/kevinOn.png) no-repeat;
+	background-size: 60%;
+	height: 200px;
+	width: 231px;
+	padding-bottom: 80px;
+}
+#erin{
+	display: inline-block;
+	background: url(../images/erinOff.png)  no-repeat;
+	background-size: 60%;
+	height: 200px;
+	width: 231px;
+}
+#erin:hover{
+	display: inline-block;
+	background: url(../images/erinOn.png)  no-repeat;
+	background-size: 60%;
+	height: 200px;
+	width: 231px;
+}
+#josh{
+	display: inline-block;
+	background: url(../images/joshOff.png)  no-repeat;
+	background-size: 60%;
+	height: 200px;
+	width: 231px;
+	padding-bottom: 80px;
+}
+#josh:hover{
+	display: inline-block;
+	background: url(../images/joshOn.png) no-repeat;
+	background-size: 60%;
+	height: 200px;
+	width: 231px;
+	padding-bottom: 80px;
+}
+#showInfo{
+	font-size: 16px;
+	font-family: Verdana, Tahoma, sans-serif;
+	color: black;
+	text-align: center;
+	font-style: italic;
+}
+#contact-form{
+	display:none;
+}
+#simplemodal-container a.modalCloseImg {
+	background:url(../images/x.png) no-repeat; /* adjust url as required */
+	width:25px;
+	height:29px;
+	display:inline;
+	z-index:3200;
+	position:absolute;
+	top:-15px;
+	right:-18px;
+	cursor:pointer;
+}
+input, textarea {   
+    padding: 9px; 
+    border: solid 1px #E5E5E5;  
+    outline: 0;  
+    font: normal 13px/100% Verdana, Tahoma, sans-serif;  
+    width: 200px;  
+    background: #FFFFFF url('bg_form.png') left top repeat-x;  
+    background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));  
+    background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);  
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;  
+    margin-top: 0px;
+	margin-bottom: 0px;
+    }  
+  
+textarea {   
+    width: 400px;  
+    max-width: 400px;  
+    height: 150px;  
+    line-height: 150%;  
+    margin-top: 0px;
+	margin-bottom: 0px;
+    }  
+  
+input:hover, textarea:hover,  
+input:focus, textarea:focus {   
+    border-color: #C9C9C9;   
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;  
+    }  
+  
+.form label {   
+    margin-right: 10px;   
+    color: black; 
+    font-family: Verdana, Tahoma, sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;  
+    }
+
+.btn-big {
+  background-color: #761952;
+  background-image: 
+    linear-gradient(
+      167deg, 
+      rgba(white, 0.1) 50%, 
+      rgba(black, 0) 55%),
+    linear-gradient(
+      top, 
+      rgba(white, 0.15), 
+      rgba(black, 0));
+  border-radius: 6px;
+  box-shadow:
+    0 0 0 1px #a02d73 inset,
+    0 0 0 2px rgba(white, 0.15) inset,
+    0 8px 0 0 #a02d73,
+    0 8px 0 1px rgba(black, 0.4),
+    0 8px 8px 1px rgba(black, 0.5);
+  color: #FFF;
+  display: inline-block;
+  font-family: 'megalopolis_extraregular';
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 61px;
+  line-height: 61px;
+  margin: 28px 0 10px;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(black, 0.5);
+  text-decoration: none !important;
+  @include transition(0.15s);
+  width: 186px;
+  &:hover, &:focus {
+    background-color: black;
+    box-shadow: 
+      0 0 0 1px #a02d73 inset,
+      0 0 0 2px rgba(white, 0.15) inset,
+      0 10px 0 0 #a02d73,
+      0 10px 0 1px rgba(black, 0.4),
+      0 10px 8px 1px rgba(black, 0.6);    
+  }
+  &:active {
+    box-shadow: 
+      0 0 0 1px #a02d73 inset,
+      0 0 0 2px rgba(white, 0.15) inset,
+      0 0 0 1px rgba(black, 0.4);
+    @include transform(translateY(10px));      
+  }
+   &:visited{
+    }
+}
