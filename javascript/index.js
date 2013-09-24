@@ -3,11 +3,11 @@ $(document).on("ready",function(){
 		event.preventDefault();
 		$(".form").modal();
 	});
-	$("#spiral").on("mouseenter",function(event){
-		$("#spiral").addClass("spiral");
+	$("#centerImages").on("mouseenter",function(event){
+		$("#spiral_container").children('img').addClass("spiral");
 	});
-	$("#spiral").on("mouseleave",function(event){
-		$("#spiral").removeClass("spiral");
+	$("#centerImages").on("mouseleave",function(event){
+		$("#spiral_container").children('img').removeClass("spiral");
 	});
 });
 

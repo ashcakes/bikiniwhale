@@ -12,7 +12,7 @@ color:#000;
 background:url("../images/modalBackground.png") no-repeat;
 background-color:#FFF;
 }
-#simplemodal-container .simplemodal-data {padding:8px;}
+#simplemodal-container .simplemodal-data {padding:8px; text-align: center;}
 #simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
 .simple-modal-close {
 width:20px; 
