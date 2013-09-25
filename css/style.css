@@ -201,6 +201,7 @@ li{
 #video{
 	text-align: center;
 	padding-top: 150px;
+	z-index: 1;
 }
 #smallLogo{
 	display: inline;
